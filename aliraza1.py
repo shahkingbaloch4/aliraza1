@@ -3,19 +3,19 @@ import os
 try:
     import requests
 except ImportError:
-    print('\n [✓] installing requests !...\n')
+    print('\n [âœ“] installing requests !...\n')
     os.system('pip install requests')
 
 try:
     import concurrent.futures
 except ImportError:
-    print('\n [✓] installing futures !...\n')
+    print('\n [âœ“] installing futures !...\n')
     os.system('pip install futures')
 
 try:
     import bs4
 except ImportError:
-    print('\n [✓] installing bs4 !...\n')
+    print('\n [âœ“] installing bs4 !...\n')
     os.system('pip install bs4')
 
 import requests, os, re, bs4,platform, sys, json, time, random, datetime, subprocess, threading, itertools,base64,uuid,zlib
@@ -72,23 +72,16 @@ def jalan(z):
         time.sleep(0.01)
 
 logo =                                          """   
-   \033[1;37m   _____                
- |  __ \               
- | |__) |__ _ ______ _ 
- |  _  // _` |_  / _` |
- | | \ \ (_| |/ / (_| |
- |_|  \_\__,_/___\__,_|
-                       
-                       
-   \033[1;37m
-   \033[1;37m     
-   \033[1;37m  
-   \033[1;37m         
-   \033[1;37m
-   \033[1;37m 
+   \033[1;37m ######      ######     ########  
+   \033[1;37m##    ##    ##    ##    ##     ## 
+   \033[1;37m##          ##          ##     ## 
+   \033[1;37m ######      ######     ########  
+   \033[1;37m      ##          ##    ##     ## 
+   \033[1;37m##    ##    ##    ##    ##     ## 
+   \033[1;37m ######      ######     ########  
 \x1b[1;97m------------------------\x1b[1;97m------------------------
 \033[1;31m\033[1;37m Author \x1b[1;97m : \033[1;37m           Ali Raza Malik
-\033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m          NON STOP 🙄
+\033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m          NON STOP ðŸ™„
 \033[1;31m\033[1;37m GitHub\x1b[1;97m  : \033[1;37m           MALIK BRAND
 \033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             4.0.0
 \033[1;37m------------------------\033[1;37m------------------------ """                                              
